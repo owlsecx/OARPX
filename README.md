@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-ARP poisoning, DNS spoofing, recon, live monitor
+OARPX is a Layer-2 interception and defensive auditing suite for ARP poisoning / man-in-the-middle and DNS spoofing on networks you are authorised to test. It combines ARP sweep reconnaissance, OS and vendor fingerprinting, host risk scoring and a live device monitor that watches hosts join and leave the LAN. An IP-forwarding guard enables forwarding for controlled MiTM and restores the original state on exit so the host is left clean.
 
 ---
 
 ## ✨ Features
 
-- OARPX v1.1 — ARP MiTM / DNS spoof suite with OS fingerprinting, vendor lookup, risk scoring, and live device monitor.
+- ARP poisoning / MiTM engine with optional integrated DNS spoofing
+- LAN ARP scan with gateway auto-detection, interface listing and OUI vendor lookup
+- Host risk scoring from open ports and vendor heuristics
+- Live device monitor that tracks hosts joining and leaving the network
+- IP-forwarding guard that enables forwarding for MiTM and restores it on exit
+- Persistent DNS spoofing rules plus scan export to JSON / CSV
 
 ---
 
@@ -39,6 +44,8 @@ ARP poisoning, DNS spoofing, recon, live monitor
 
 ```bash
 ./OARPX
+./OARPX --version
+./OARPX --help
 ```
 
 ---
